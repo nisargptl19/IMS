@@ -460,27 +460,13 @@ app.post('/orders_query', checkAuthenticated, (req, res) => {
 
 //Sales Filter
 app.get('/sales_filter', checkAuthenticated, (req, res) => {
-  const rows = {};
-  const parameters = {
-    is_paramater_set: false,
-    time_type: 'none',
-    filter_type: 'none',
-    display_content: rows,
-    month_name: 'None',
-    year: 'None',
-    total_amount: 'None'
-  };
-  res.render('sales_filter.ejs', parameters);
-});
+  rows = {}
+  res.render('sales_filter.ejs', { is_paramater_set: false, time_type: 'none', filter_type: 'none', display_content: rows, month_name: 'None', year: "None", total_amount: "None" })
+})
 
 app.get('/stock_filter', (req, res) => {
-  const filterData = {
-    filter_type: 'None',
-    display_content: {},
-    total_items: {}
-  };
-  res.render('stock_filter.ejs', filterData);
-});
+  res.render('stock_filter.ejs', { filter_type: 'None', display_content: {}, total_items: {} })
+})
 
 //Stock Filter
 app.post('/stock_filter_query', checkAuthenticated, (req, res) => {
