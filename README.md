@@ -3,24 +3,12 @@
 
 This is a free lancing project where I made a dynamic website for managing inventory with features like Billing, Adding, Removing Inventory/Stock and Analysis of Sales and Stocks with custom filters for a retail client
 
-
-## Demo
-
-Here is a working demo of the website:- https://www.youtube.com/watch?v=MTikCHU2FL0&t=603s
-
-  
-## Authors
-
-- [@sheturaj](https://github.com/ShetuRaj)
-
   
 ## Contributing
 
 Contributions are always welcome!
 
 You can let me know if you want to contribute to this project. 
-
-
 
   
 ## Features
