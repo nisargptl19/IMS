@@ -461,9 +461,7 @@
         var date_format = new Date();
         var bill_name = "SHW" + date_format.getDate() + date_format.getMonth() + date_format.getFullYear() + date_format.getHours() + date_format.getMinutes() + date_format.getSeconds()
         easyinvoice.download(`${bill_name}.pdf`, result.pdf);
-        //	you can download like this as well:
-        //	easyinvoice.download();
-        //	easyinvoice.download('myInvoice.pdf');
+       
       });
     }
     function getSampleData() {
@@ -513,8 +511,7 @@
           "country": "Mob. - <shop-owner-mobile-number>",
 
           "custom1": "GST No. - <shop-gst-no.>"
-          //"custom2": "custom value 2",
-          //"custom3": "custom value 3"
+         
         },
 
         "invoiceNumber": transaction_id,

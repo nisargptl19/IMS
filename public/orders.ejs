@@ -492,9 +492,10 @@
                                 <td>
                                   <%= order.TransactionDate %>
                                 </td>
-                                <td>
-                                  <%= order.TransactionTime %>&emsp;<form action="/deleteitem" method="POST"><input
-                                        type="hidden" name="deleteid" value="<%= order.ItemID %>"><button type="submit"
+                                <td>        
+                                <%= order.TransactionTime %>&emsp;<form action="/deleteitem" method="POST"><input
+              
+                               type="hidden" name="deleteid" value="<%= order.ItemID %>"><button type="submit"
                                         class="btn btn-danger btn-sm">Delete</button></form>
                                 </td>
                                 <td>
