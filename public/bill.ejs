@@ -99,6 +99,10 @@
       </li>
     </ul>
 
+
+
+
+
     <h5 class="ui horizontal divider header text-primary">
       FILTERS
     </h5>
@@ -119,6 +123,10 @@
     </ul>
   </div>
   <!-- End vertical navbar -->
+
+
+
+
 
   <!-- Page content holder -->
   <div class="page-content p-5" id="content" style="background: linear-gradient(to right, #e9edf1 47%, #ff8ab3 100%);">
@@ -149,6 +157,10 @@
             </tr>
           </thead>
 
+
+
+
+
           <tbody>
 
             <tr>
@@ -163,6 +175,8 @@
                   <button type="button" class="btn btn-outline-success" id="fetchitem1" onclick="fetchitem()">Get
                     Item</button>
                 </div>
+
+
               </td>
               <td class="table-primary">
                 <div class="form-floating">
@@ -170,6 +184,7 @@
                   <label for="floatingInput">Name</label>
 
                 </div>
+
               </td>
               <td class="table-warning">
                 <div class="form-floating">
@@ -181,9 +196,12 @@
                       </option>
                       <% }); %>
 
+
                   </select>
                   <label for="floatingInput">Category</label>
                 </div>
+
+
               </td>
               <td class="table-warning">
                 <div class="form-floating">
@@ -194,10 +212,13 @@
                       </option>
                       <% }); %>
 
+                      
                   </select>
                   <label for="floatingInput">Brand</label>
                 </div>
               </td>
+
+
               <td class="table-warning">
                 <div class="form-floating">
                   <select class="form-select" aria-label="Default select example" name="size1" id="size1" required>
@@ -208,6 +229,10 @@
                       <% }); %>
 
                   </select>
+
+
+
+
                   <label for="floatingInput">Size</label>
                 </div>
               </td>
@@ -218,6 +243,10 @@
                   <label for="floatingInput">Amount <i class="dollar sign icon"></i></label>
 
                 </div>
+
+
+
+
               </td>
               <td class="table-primary">
                 <div class="form-floating">
@@ -272,6 +301,10 @@
 
 
   <script>
+
+
+
+
     $(document).ready(function ($) {
       $(document).on('click', ".btn_row_add_below_end", function (e) {
         var tableBody = $(document).find('.tbl_code_with_mark').find("tbody");
@@ -286,6 +319,8 @@
         var flag1 = flag2 = 1;
         for (var i = 0; i < inputs.length; i++) {
 
+
+
           if (inputs[i].id != 'total') {
 
             inputs[i].id = (inputs[i].id).replace(/\d+/g, '')
@@ -295,9 +330,14 @@
             if (flag2 % 5 == 0) {
               flag1++;
             }
+
+
             flag2++;
 
+
+
           }
+
         }
         var count = 0
         for (var i = 0; i < inputs.length; i++) {
@@ -308,6 +348,8 @@
           }
         }
 
+
+
         for (var i = 0; i < inputs.length; i++) {
           if (inputs[i].id != 'total') {
             if ((inputs[i].id).includes(len.toString()) && !((inputs[i].id).includes("number"))) {
@@ -315,6 +357,8 @@
               inputs[i].innerText = ""
             }
           }
+
+
         }
 
         console.log(inputs)
@@ -331,6 +375,8 @@
           }
           flag2++;
         }
+
+
         console.log(selects)
         buttons = document.getElementsByTagName("button");
         var flag1 = 1;
@@ -346,7 +392,12 @@
         }
       });
     });
+
+
   </script>
+
+
+
   <script>
     function fetchitem() {
       console.log('fetch button called')
@@ -360,6 +411,8 @@
           button_num = (button_id.match(/(\d+)/))[0]
           console.log(button_num)
         }
+
+
       }
       console.log(buttons)
       var inputs = document.getElementsByTagName("input");
@@ -376,9 +429,11 @@
         type: "POST",
         url: "/fetchitem",
         data: {
-          
+
           "itemid": pass_item.value
         },
+
+
         success: function (data) {
           // console.log('Fetched Data')
           if (data.status == 200) {
@@ -402,6 +457,9 @@
                 // console.log(x.Amount)
               }
             }
+
+
+
             var total_amount = 0
             for (var i = 0; i < inputs.length; i++) {
 
@@ -410,6 +468,9 @@
                 // console.log(x.Amount)
               }
             }
+
+
+
             // console.log(total_amount)
             for (var i = 0; i < inputs.length; i++) {
               if (inputs[i].id == 'total')
@@ -436,14 +497,24 @@
               }
             }
 
-          } else if (data.status == "failed") {
+          } 
+          
+          
+          
+          else if (data.status == "failed") {
             alert("failed authentication!")
           }
         }
       });
     }
   </script>
+
+
+
+
   <script>
+
+    
     $(function () {
       // Sidebar toggle behavior
       $('#sidebarCollapse').on('click', function () {
