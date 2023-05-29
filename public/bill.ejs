@@ -145,7 +145,7 @@
               <th>Brand</th>
               <th>Size</th>
               <th>Amount</th>
-              <th>Phone Number</th>
+              <th>Mobile No</th>
             </tr>
           </thead>
 
@@ -302,8 +302,6 @@
         var count = 0
         for (var i = 0; i < inputs.length; i++) {
           if ((inputs[i].id).includes("number")) {
-            // console.log(`Item Name = ${inputs[i]}`)
-            // console.log(`Before value = ${inputs[i].value}`)
             inputs[i].value = count + 1
             // console.log(`After value = ${inputs[i].value}`)
             count++;

@@ -212,16 +212,7 @@
                         <%= order.Brand %>
                       </option>
                       <% }); %>
-                        <!-- <option value="Turtle">Turtle</option>
-                <option value="Duke">Duke</option>
-                <option value="US Polo">US Polo</option>
-                <option value="Flying Machine">Flying Machine</option>
-                <option value="Donear">Donear</option>
-                <option value="Adven">Adven</option>
-                <option value="Siffar">Siffar</option>
-                <option value="Law Man">Law Man</option>
-                <option value="John Player">John Player</option> -->
-                  </select>
+               
                   <label for="floatingInput">Brand</label>
                 </div>
               </td>
@@ -292,25 +283,11 @@
         var len = x.rows.length;
         console.log(`No. of rows = ${len}`)
         trLast.after(trNew);
-        // trNew[0].getElementsByTagName('num').textContent = len;
-        // var value = parseInt(document.getElementById('number').value, 10);
-        // console.log(value);
-        // value = isNaN(value) ? 0 : value;
-        // console.log(value);
-        // value++;
-        // console.log(value);
-        // document.getElementById('number').value = value;
-        // console.log(ele)
-        // ele.innerHTML.text = len;
-        // console.log(ele.innerHTML.text)
-        // trNew[0].getElementById('num').textContent = len;
+        
         var inputs = document.getElementsByTagName("input");
         var flag1 = flag2 = 1;
         for (var i = 0; i < inputs.length; i++) {
-          // console.log(`Before value = ${tables[i].innerText}`)
-          // tables[i].value = (i+1).toString()
-          // tables[i].value = i + 1
-          // console.log(tables[i].valueAsNumber)
+      
           inputs[i].id = (inputs[i].id).replace(/\d+/g, '')
           inputs[i].name = (inputs[i].name).replace(/\d+/g, '')
           inputs[i].id = inputs[i].id + (flag1).toString();
@@ -347,7 +324,8 @@
           selects[i].name = (selects[i].name).replace(/\d+/g, '')
           selects[i].id = selects[i].id + (flag1).toString()
           selects[i].name = selects[i].name + (flag1).toString();
-          if (flag2 % 3 == 0) {
+          if (flag2 % 3 == 0) 
+          {
             flag1++;
           }
           flag2++;
