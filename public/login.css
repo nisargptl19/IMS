@@ -8,7 +8,7 @@
 // This is an example of animations & svgs... I completely understand that the amount of absolute positioning in this file is insane... ;) <3
 
 body {
-  background: linear-gradient(#3800e7, #8a15ff);
+  background: linear-gradient(#49e63b, #f03e3e);
   height: 100vh;
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   font-family: "DM Mono", monospace;
