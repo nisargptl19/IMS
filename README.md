@@ -7,7 +7,8 @@ This is an Inventory Management System made for group project in SIT725 - Applie
 
 Here is a working demo of the website:- https://youtu.be/4pP__drMdA0
 
- 
+## Docker Hub Link
+Here is our docker hub image:- https://hub.docker.com/repository/docker/palash315/ims/general
   
 ## Contributing
 
