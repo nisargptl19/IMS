@@ -1,1 +1,4 @@
-This is an inventory management system made under group project of SIT725.
+# Inventory Management System
+
+# Docker Hub Link
+https://hub.docker.com/r/palash315/ims/tags
