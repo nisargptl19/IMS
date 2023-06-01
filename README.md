@@ -15,15 +15,6 @@ Here is our docker hub image:- https://hub.docker.com/repository/docker/palash31
 The contributors of these project is Palash Shah, Nisarg Patel, Somansh Ahuja and Yash Jangra
 
   
-## Features
-
-- Stock Inventory
-- Billing
-- Sales Analysis
-- Stock Analysis
-- Generation of Bill in printable format
-
-  
 ## Tech Stack
 
 **Front End:** Javascript, Bootstrap, Semantic-UI
